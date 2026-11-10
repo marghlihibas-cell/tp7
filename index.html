@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Gestion interactive des utilisateurs</h1>
+
+        <form id="user-form">
+<div>
+            <label for="nom">Nom :</label>
+
+            <input type="text"
+                   id="nom"
+                   required>
+</div>
+<div>
+            <label for="email">E-mail :</label>
+
+            <input type="email"
+                   id="email"
+                   required>
+</div>
+<div>
+            <label for="password">Mot de passe :</label>
+
+            <input type="password"
+                   id="password"
+                   minlength="6"
+                   required>
+</div>
+<div>
+            <span id="pwd-tooltip">
+                Le mot de passe doit contenir
+                au moins 6 caractères.
+            </span>
+</div>
+<div>
+            <button type="submit">
+                Ajouter utilisateur
+            </button>
+</div>
+
+        </form>
+
+        <section>
+
+            <h2>Liste des utilisateurs</h2>
+
+            <ul id="dynamic-list">
+
+            </ul>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
